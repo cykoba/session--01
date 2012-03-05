@@ -1,0 +1,8 @@
+$mywidth: 100px;
+.aaa {
+	width: auto;
+	
+	.bbb {
+		width: $mywidth / 4;
+	}
+}

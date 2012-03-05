@@ -1,0 +1,95 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="format-detection" content="telephone=no">
+<link rel="stylesheet" href="http://meyerweb.com/eric/tools/css/reset/reset.css">
+
+<title>session-01 sass</title>
+</head>
+
+<body>
+<header>
+	<h1>sassを使う</h1>
+</header>
+
+<section>
+	<h2>sassとは</h2>
+	<p>
+		<dfn><abbr title="Syntactically Awesome StyleSheets">sass</abbr></dfn>（Syntactically Awesome StyleSheets）とは、cssのメタ拡張言語。<br>
+		通常のcssよりもシンプルな記述--セレクタのネスト--や、変数の使用などが可能。
+	</p>
+		
+	<article>
+		<figure>
+			
+			<figcaption>
+			<cite><a href="http://d.hatena.ne.jp/maeshima/20110706/1309961984">SCSSの関数で出来ること</a></cite>
+			</figcaption>
+			<blockquote>
+				<ul>
+					<li> 赤色、緑色、青色の調整</li>
+					<li> <a href="http://d.hatena.ne.jp/keyword/%BF%A7%C1%EA" class="keyword">色相</a>、<a href="http://d.hatena.ne.jp/keyword/%BA%CC%C5%D9" class="keyword">彩度</a>、光度の調整</li>
+					<li> 透明度の調整</li>
+					<li> 明るさの調整</li>
+					<li> 二色をまぜる</li>
+					<li> クォートの追加／除去</li>
+					<li> 数値の調整(round, ceil, floor, <a href="http://d.hatena.ne.jp/keyword/abs" class="keyword">abs</a>)</li>
+					<li> 単位(%, px, em)の操作</li>
+					<li> 単位付きの数値の比較(例:pxとemの比較)</li>
+					<li> 複数要素の操作(length, nth, join)</li>
+					<li> if 文</li>
+				</ul>		
+			</blockquote>
+		</figure>
+	</article>
+	
+	<p>		
+		記述はcssの文法と基本同じなので習得の手間は殆どないわりに、作業の大幅な効率化が図れる。<br>
+		また、ミニマルなwebデザインのシーンにおいては、
+	</p>
+</section>
+
+<section>
+	<h2>準備</h2>	
+	<ol>
+		<li>scss:cssコンバータ“Scout”を導入する
+			<ol>
+				<li>インストール</li>
+				<li>Windows 64bit-OSでの設定</li>
+			</ol>
+		</li>
+		<li>dreamweaverでscssを扱えるように設定する</li>
+	</ol>
+</section>
+
+
+<article>
+環境設定＞ファイルタイプ／エディタ＞コードビューで開く
+
+に拡張子scss を追加しておきます。
+</article>
+
+<article>
+準備
+
+scoutをダウンロードし、
+64bitOSの場合は
+\Program Files (x86)\Scout\javascripts\app\process_interaction.js」の95行目を編集する
+95行目
+return air.File.applicationDirectory.resolvePath("C:\\Program Files\\Java\\jre6\\bin\\java.exe");
+     ↓
+return air.File.applicationDirectory.resolvePath("C:\\Program Files (x86)\\Java\\jre6\\bin\\java.exe");
+</article>
+
+<aside>
+参考
+</aside>
+
+<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+<!--[if (gte IE 6)&(lte IE 8)]>
+	<script src="selectivizr-min.js"></script>
+<![endif]--> 
+</body>
+</html>
